@@ -1,0 +1,75 @@
+ .sliderimg{
+    height:25vh;
+    object-fit:cover;
+    overflow:hidden;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+   
+}
+
+.slider{
+    position: relative;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.slidercenter{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:70vh;
+}
+.round{
+    width:10px;
+    height:10px;
+    border-radius: 20px;
+    background-color:grey; 
+    padding:0;
+    margin:5px;
+    transition-duration: 2s ease;
+   
+}
+.activeround{
+    width:10px;
+    height:10px;
+    border-radius: 20px;
+    background-color:black; 
+    padding:0;
+    margin:5px;
+    transition-duration: 1s ;
+
+}
+.roundDiv{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+    top:-180px
+    
+}
+.slide{
+    opacity:0;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+.active{
+    opacity:1;
+    transition-duration :1s;
+    transform: scale(1.08);
+}
+.btnleft{
+    position:absolute;
+    top:50%;
+    left:20%;
+    
+}
+.btnright{
+    position:absolute;
+    top:50%;
+    right:20%;
+
+}
+
